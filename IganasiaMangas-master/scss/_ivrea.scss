@@ -1,0 +1,24 @@
+/* Contenido Ivrea */
+
+
+.Imagenes-ivrea{
+    display: flex;
+    justify-content: center;
+    
+}
+.contenedor-ivrea{
+    display: flex;
+    justify-content: flex-start;
+    width: 900px;
+    flex-wrap: wrap;
+}
+
+.elementos-ivrea{
+    list-style: none;
+    width: 100px;
+    height: 150px;
+    margin: 100px;
+    margin-left: 20px;
+    
+}
+/* Fin Ivrea */

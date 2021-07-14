@@ -1,0 +1,63 @@
+/* inicio Footer*/ /* already saseeado */
+footer{
+    background-color: #322B61;
+    height: auto;
+    max-width:initial;
+    font-family: 'Anton', sans-serif;
+    padding-top: 10px;
+    color: blanchedalmond;
+    border: ridge;
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h3{
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 3rem;
+            p{
+                max-width: 600px;
+                margin: 10px auto;
+                line-height: 28px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.socials{
+    list-style: none;
+    display:list-item;
+    align-items: left;
+    justify-content: left;
+    margin: 1rem 0 3rem 0;
+
+}
+
+
+
+/* go-top */ /* sasseado */
+.go-top{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    
+    bottom: 40px;
+    right: 70px;
+
+    text-decoration: none;
+    text-align: center;
+
+    transition: all 1s;
+    :hover{
+        transform: scale(2);
+        
+    }
+
+}
+
+
+
+/* Final del footer */

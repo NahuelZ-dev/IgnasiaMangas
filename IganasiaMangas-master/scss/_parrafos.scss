@@ -1,0 +1,23 @@
+/* Párrafo de Formatos  */
+
+.formatos{
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+/* Fin parrafo formatos */
+
+/* font-face */
+@font-face {
+    font-family: 'fuente-japones';
+    src: url(../Formatos/KARATE.ttf);
+}
+
+.titulos{
+    font-family: 'fuente-japones';
+    
+}
+
+/* fin font-face */

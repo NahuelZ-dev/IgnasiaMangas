@@ -1,0 +1,420 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* nuevo Menu */
+#navbar{
+  background-color: #322B61;
+  font-family: "Anton", sans-serif;
+  font-size: 30px;
+  border: ridge;
+  justify-content: space-around;
+  -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#navbar ul {
+  padding-left: 10%;
+}
+
+#navbar .navbar-brand{
+  padding-left: 3%;
+}
+
+#navbar li a{
+  padding: 0 25px;
+  color: goldenrod;
+}
+
+/* hover */
+#navbar li a:hover {
+  color: firebrick;
+  transition: all 0, 9s;
+}
+
+body {
+  background-image: url("../imagenes mangas/spring.jpg");
+  background-attachment: fixed;
+}
+
+/* Fin imagen de fondo */
+/* Banner */
+div#banner {
+  width: 100%;
+}
+
+img#img-banner {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 500px;
+}
+
+/* logo */
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 90%;
+}
+
+/* fin logo */
+/* Fin Banner */
+/* Destacados de la semana */
+.destacados {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.destacados .card {
+  width: 15%;
+  height: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.destacados .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px black;
+}
+
+.container .card img {
+  width: 330px;
+  height: 220px;
+}
+
+.card p {
+  font-family: "fuente-japones";
+  font-size: 20px;
+}
+
+/* Fin destacad */
+/* inicio Footer*/
+/* already saseeado */
+footer {
+  background-color: #322B61;
+  height: auto;
+  max-width: initial;
+  font-family: "Anton", sans-serif;
+  padding-top: 10px;
+  color: blanchedalmond;
+  border: ridge;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+footer .footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+footer .footer-content h3 p {
+  max-width: 600px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: list-item;
+  align-items: left;
+  justify-content: left;
+  margin: 1rem 0 3rem 0;
+}
+
+/* go-top */
+/* sasseado */
+.go-top {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 40px;
+  right: 70px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 1s;
+}
+.go-top :hover {
+  transform: scale(2);
+}
+
+/* Final del footer */
+/* Grid Formatos */
+.formatos-columnas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+}
+
+.formatos-columnas div {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.formatos-columnas div img {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 90%;
+}
+
+/* Fin grid Formatos */
+/* Contenido Ivrea */
+.Imagenes-ivrea {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.contenedor-ivrea {
+  display: flex;
+  justify-content: flex-start;
+  width: 900px;
+  flex-wrap: wrap;
+}
+
+.elementos-ivrea {
+  list-style: none;
+  width: 100px;
+  height: 150px;
+  margin: 100px;
+  margin-left: 20px;
+}
+
+/* Fin Ivrea */
+/* media query */
+@media screen and (max-width: 768px) {
+  .go-top{
+    display: none;
+  }
+  body section{
+    font-size: 0.2em;}
+  .formatos-columnas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .destacados {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+  #navbar{
+    max-width: 100%;
+  }
+  .formatos-columnas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .titulos {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider {
+    display: flex;
+    justify-content: flex-start;
+    width: 900px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+/*  
+/* /* fin de Media query */
+/* menu desplegable */
+
+}/* .navegacion {
+  max-width: initial;
+  margin: 5px;
+  background-color: #322B61;
+  font-family: "Anton", sans-serif;
+  border: ridge;
+  justify-content: space-around;
+  -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.navegacion ul {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a {
+  display: block;
+  font-size: 40px;
+  padding: 15px 20px;
+  color: goldenrod;
+  font-family: "Anton", sans-serif;
+  text-decoration: none;
+}
+
+
+
+/* fin hover */
+/* Submenu */
+/* 
+.submenu {
+  position: absolute;
+  background: #333333;
+  width: 120%;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.submenu li a {
+  display: block;
+  padding: 15px;
+  color: goldenrod;
+  font-family: "Anton", sans-serif;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;  */
+
+Fin menu desplegable */
+/* Nosotros */
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nosotros img {
+  height: 40%;
+  width: 40%;
+}
+
+.nosotros img:hover {
+  box-shadow: 0 12px 16px black;
+}
+
+/* Fin Nostros */
+/* Contenido Panini */
+.Imagenes-panini {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-panini {
+  display: flex;
+  justify-content: flex-start;
+  width: 900px;
+  flex-wrap: wrap;
+}
+
+.elementos-panini {
+  list-style: none;
+  width: 100px;
+  height: 150px;
+  margin: 100px;
+  margin-left: 20px;
+}
+
+/* Fin Panini */
+/* Párrafo de Formatos  */
+.formatos {
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+}
+
+/* Fin parrafo formatos */
+/* font-face */
+@font-face {
+  font-family: "fuente-japones";
+  src: url(../Formatos/KARATE.ttf);
+}
+.titulos {
+  font-family: "fuente-japones";
+}
+
+/* fin font-face */
+/* Slider*/
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: flex-start;
+  width: 900px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* Fin Slider */
+/* Titulos*/
+.titulos {
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: goldenrod;
+  max-width: 700px;
+  margin: 5px;
+  background-color: #483D8B;
+  border: ridge;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 60px;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+/* fin titulos */
+/* Texto de las recomendaciones */
+.parrafos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+.parrafos::first-letter {
+  text-transform: uppercase;
+}
+
+/* Fin de de texto recomendaciones */
+
+/*# sourceMappingURL=style.css.map */

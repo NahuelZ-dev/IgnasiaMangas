@@ -1,0 +1,25 @@
+/* Contenido Panini */
+
+.Imagenes-panini{
+    display: flex;
+    justify-content: center
+    
+}
+.contenedor-panini{
+
+    display: flex;
+    justify-content: flex-start;
+    width: 900px;
+    flex-wrap: wrap;
+
+}
+
+.elementos-panini{
+    list-style: none;
+    width: 100px;
+    height: 150px;
+    margin: 100px;
+    margin-left: 20px;
+    
+}
+/* Fin Panini */

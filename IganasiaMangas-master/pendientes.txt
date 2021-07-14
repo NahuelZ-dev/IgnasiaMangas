@@ -1,0 +1,3 @@
+• Imagenes banner: Todas las mismas medias, y retocar con ps los costados para que se noten las Flechas de Bootstrap.
+• Seccion Panini Galeria: Usar Bootstrap para el sistema de columnas. (Fijate en la documentacion)
+• Nosotros: Centrar la imagen (lo podes hacer con bootstrap tambien)

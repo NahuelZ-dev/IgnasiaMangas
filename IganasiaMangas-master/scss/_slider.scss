@@ -1,0 +1,18 @@
+/* Slider*/
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.slider{
+    display: flex;
+    justify-content: flex-start;
+    width: 900px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+/* Fin Slider */

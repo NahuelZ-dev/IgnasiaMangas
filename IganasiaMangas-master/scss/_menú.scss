@@ -1,0 +1,70 @@
+/* menu desplegable */
+
+.navegacion{
+    max-width: initial;
+    margin: 5px;
+    background-color:#322B61;
+    font-family: 'Anton', sans-serif;
+    border: ridge;
+    justify-content: space-around;
+    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0);
+        ul{
+        list-style: none;
+}
+}
+
+ul{
+    list-style: none;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu >li{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.menu >li> a{
+    display: block ;
+    font-size: 40px;
+    padding: 15px 20px;
+    color:goldenrod;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+}
+/* hover */
+.menu li a:hover{
+    color: firebrick;
+    transition: all 0,9s;
+}
+/* fin hover */
+
+/* Submenu */
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    z-index: 1;
+
+    
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: goldenrod;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    
+}
+
+/* Fin menu desplegable */
